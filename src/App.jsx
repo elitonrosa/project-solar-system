@@ -1,9 +1,9 @@
 import React from 'react';
+
 import Header from './components/Header';
 import Missions from './components/Missions';
 import SolarSystem from './components/SolarSystem';
-
-import './App.sass';
+import './styles/App.sass';
 
 class App extends React.Component {
   render() {
