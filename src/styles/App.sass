@@ -7,12 +7,89 @@
 
 body
   background-image: url('../assets/images/background.png')
+  width: 100vw
 
   header
-    display: flex
-    justify-content: center
-    margin-bottom: 150px
+    @include flex-center
+    margin-bottom: 100px
 
     img
       width: 500px
+  
+  main
+    max-width: 100%
+    
+    .solar-system
+      @include flex-center
+      flex-wrap: wrap
+
+      h2
+        text-align: center
+        width: 100%
+        font-weight: 400
+        text-transform: uppercase
+        font-size: 40px
+        margin-bottom: 20px
+      
+      .planets-container
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        width: 100%
+        margin: 0 20px
+        margin-bottom: 40px
+        
+        .planet-card
+          height: 350px
+          display: flex
+          justify-content: space-between
+          flex-direction: column
+          align-items: center
+
+          hr
+            width: 100%
+            position: relative
+            top: 165px
+            z-index: -1
+
+          img
+            margin: auto 10px
+            transition: 0.5s
+            filter: grayscale(50%)
+
+            &:hover
+              filter: grayscale(0%)
+              transform: scale(1.3)
+
+          p
+            font-size: 16px
+            font-weight: 400
+
+          .planet-img-mercúrio
+            width: 70px + 41px
+ 
+          .planet-img-vênus
+            width: 70px + 102px 
+
+          .planet-img-terra
+            width: 70px + 106px 
+
+          .planet-img-marte
+            width: 70px + 66px
+ 
+          .planet-img-júpiter
+            width: 70px + 272px 
+
+          .planet-img-saturno
+            width: 70px + 262px 
+
+          .planet-img-urano
+            width: 70px + 144px 
+
+          .planet-img-netuno
+            width: 70px + 144px 
+
+             
+      
+
 
