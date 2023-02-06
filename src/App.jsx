@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/Footer';
 
 import Header from './components/Header';
 import Missions from './components/Missions';
@@ -14,6 +15,7 @@ class App extends React.Component {
           <SolarSystem />
           <Missions />
         </main>
+        <Footer />
       </div>
     );
   }
