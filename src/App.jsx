@@ -10,9 +10,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <main>
+        <div className="first-view">
+          <Header />
           <SolarSystem />
+        </div>
+        <main>
           <Missions />
         </main>
         <Footer />

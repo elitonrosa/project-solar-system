@@ -5,14 +5,14 @@ class PlanetCard extends React.Component {
   render() {
     const { planetName, planetImage } = this.props;
     return (
-      <div className="planet-card">
+      <div className={ `planet-card planet-card-${planetName.toLowerCase()}` }>
         <hr />
         <img
           src={ planetImage }
           alt={ `Planeta ${planetName}` }
           className={ `planet-img-${planetName.toLowerCase()}` }
         />
-        <p data-testid="planet-name">{planetName}</p>
+        <p>{planetName}</p>
       </div>
     );
   }
