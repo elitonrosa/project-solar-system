@@ -9,6 +9,9 @@ class SolarSystem extends React.Component {
       <div className="solar-system">
         <Title headline="Planetas" />
         <div className="planets-container">
+          <div className="planet-card">
+            <hr />
+          </div>
           {planets.map((planet, index) => (
             <PlanetCard
               key={ index }
@@ -16,6 +19,9 @@ class SolarSystem extends React.Component {
               planetImage={ planet.image }
             />
           ))}
+          <div className="planet-card">
+            <hr />
+          </div>
         </div>
       </div>
     );
